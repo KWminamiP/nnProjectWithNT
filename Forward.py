@@ -7,9 +7,17 @@
 class ForwardFunction:
     #float w 　重みとしきい値
     #float e 　入力のデータセット
-    def forward(w, e):
+    def __init__(self, w_int, e_int):
+        self.w = w_int
+        self.e = e_int
+        print("Initialized!")
+
+    def forward(self):
         #float u   #入力値
         #float o   #出力値
+        w = self.w
+        e = self.e
+
         o = 100.0
         u = 0.0   #入力値の初期化
         #float
