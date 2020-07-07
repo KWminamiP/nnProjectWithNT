@@ -22,9 +22,12 @@ class ForwardFunction:
         u = 0.0   #入力値の初期化
         #float
         threshold = 100.0    #しきい値
-        for i, j in zip(*w, *e):
-            u=u+i*j
-            threshold=i    #しきい値はリストwの最後の値
+        #for i, j in zip(*w, *e):
+        #    u=u+i*j
+        #    threshold=i    #しきい値はリストwの最後の値
+        print("これはForward関数の中です。")
+        print(w)
+        print(e)
         u=u-threshold     #しきい値の処理
         o = u              #= f(u)
         return o
