@@ -24,7 +24,7 @@ class ForwardFunction:
         #float
         threshold = 100.0    #しきい値
         for i in range(len(e)):
-            print(i)
+            #print(i)
             u= u+w[i]*e[i]
             threshold = w[i+1] #しきい値はリストwの最後の値
             #print("これはfor文の中です。")
