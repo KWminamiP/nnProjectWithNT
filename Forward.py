@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[7]:
+# In[1]:
 
 
+import ffunction
 class ForwardFunction:
     #float w 　重みとしきい値
     #float e 　入力のデータセット
