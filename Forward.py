@@ -27,17 +27,13 @@ class ForwardFunction:
             print(i)
             u= u+w[i]*e[i]
             threshold = w[i+1] #しきい値はリストwの最後の値
-            print("これはfor文の中です。")
-        print("これはForward関数の中です。")
-        print(threshold)
-        print(u)
+            #print("これはfor文の中です。")
+        #print("これはForward関数の中です。")
+        print("しきい値 : ",threshold)
+        print("入力と重みの計算結果 : ",u)
         u=u-threshold     #しきい値の処理
-        o = ffunction.f(u)           
+        o = ffunction.f(u)
         return o
 
 
 # In[ ]:
-
-
-
-
