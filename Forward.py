@@ -32,7 +32,7 @@ class ForwardFunction:
         print(threshold)
         print(u)
         u=u-threshold     #しきい値の処理
-        o = f(u)           
+        o = ffunction.f(u)           
         return o
 
 
