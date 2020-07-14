@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[7]:
 
 
 class ForwardFunction:
@@ -13,8 +13,8 @@ class ForwardFunction:
         print("Initialized!")
 
     def forward(self):
-        #float u   #入力値
-        #float o   #出力値
+        #u  入力値
+        #o  出力値
         w = self.w
         e = self.e
 
@@ -22,15 +22,21 @@ class ForwardFunction:
         u = 0.0   #入力値の初期化
         #float
         threshold = 100.0    #しきい値
-        #for i, j in zip(*w, *e):
-        #    u=u+i*j
-        #    threshold=i    #しきい値はリストwの最後の値
+        for i in range(len(e)):
+            print(i)
+            u= u+w[i]*e[i]
+            threshold = w[i+1] #しきい値はリストwの最後の値
+            print("これはfor文の中です。")
         print("これはForward関数の中です。")
-        print(w)
-        print(e)
+        print(threshold)
+        print(u)
         u=u-threshold     #しきい値の処理
-        o = u              #= f(u)
+        o = f(u)           
         return o
 
 
 # In[ ]:
+
+
+
+
