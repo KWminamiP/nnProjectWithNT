@@ -1,7 +1,10 @@
 #これがmain関数
 import getdata
 import Forward
-w = [1,1,1.5]
+import initw
+
+w = initw.initweight()
+#w = [1,1,1.5]
 print("データ読み込み開始")
 a,b = getdata.get_data(4)
 #print(a)
